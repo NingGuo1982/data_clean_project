@@ -49,3 +49,4 @@ library(plyr)
 subdatacombine2<- aggregate(. ~ subject + activity, subdatacombine, mean)
 str(subdatacombine2)
 write.table(subdatacombine2, file = "tidydata.txt",row.name=FALSE)
+
